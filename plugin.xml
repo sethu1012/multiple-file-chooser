@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova.plugin.multiplefilechooser" version="1.0.0">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugin-multiplefilechooser" version="1.0.0">
    <name>MultipleFileChooser</name>
    <js-module name="MultipleFileChooser" src="www/MultipleFileChooser.js">
-      <clobbers target="cordova.plugins.MultipleFileChooser" />
+      <clobbers target="MultipleFileChooser" />
    </js-module>
    <platform name="android">
       <config-file parent="/*" target="res/xml/config.xml">
@@ -11,6 +11,6 @@
          </feature>
       </config-file>
       <config-file parent="/*" target="AndroidManifest.xml" />
-      <source-file src="src/android/MultipleFileChooser.java" target-dir="src/cordova.plugin.multiplefilechooser/MultipleFileChooser" />
+      <source-file src="src/android/MultipleFileChooser.java" target-dir="src/cordova/plugin/multiplefilechooser/MultipleFileChooser" />
    </platform>
 </plugin>
