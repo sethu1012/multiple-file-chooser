@@ -1,4 +1,4 @@
-package cordova-plugin-multiplefilechooser;
+package cordova_plugin_multiplefilechooser;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
@@ -17,16 +17,9 @@ public class MultipleFileChooser extends CordovaPlugin {
         if (action.equals("coolMethod")) {
             String message = args.getString(0);
             this.coolMethod(message, callbackContext);
+            callbackContext.success("String from Plugin");
             return true;
         }
         return false;
-    }
-
-    private void coolMethod(String message, CallbackContext callbackContext) {
-        if (message != null && message.length() > 0) {
-            callbackContext.success(message);
-        } else {
-            callbackContext.error("Expected one non-empty string argument.");
-        }
     }
 }
