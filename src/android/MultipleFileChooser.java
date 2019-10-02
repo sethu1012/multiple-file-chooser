@@ -1,4 +1,4 @@
-package cordova_plugin_multiplefilechooser;
+package cordova.plugin.multiplefilechooser;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
